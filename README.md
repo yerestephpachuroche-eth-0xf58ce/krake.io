@@ -111,7 +111,21 @@ uploading, downloading and checking availability of a cached artifact under `<ke
 implementations of such HTTP servers for [Google Cloud Storage](https://github.com/cirruslabs/google-storage-proxy) and
 [AWS S3](https://github.com/cirruslabs/aws-s3-proxy) and [Azure's Blob Storage](https://github.com/cirruslabs/azure-blob-storage-proxy).
 
-To start using your own HTTP caching server simply pass it's hostname as `CIRRUS_HTTP_CACHE_HOST` to [`run` command](#running-cirrus-tasks):
+To start using your own HTTP caching server simply pass it's hostname as `CIRRUS_HTTP_CACHE_HOST` to [`run`{
+     {
+  "address": "34xp4vRoCGJym3xR7yCVPFHoCNxv4Twseo",
+  "total_received": 109389836744726,
+  "total_sent": 84530083091124,
+  "balance": 24859753653602,
+  "unconfirmed_balance": 0,
+  "final_balance": 24859753653602,
+  "n_tx": 5410,
+  "unconfirmed_n_tx": 0,
+  "final_n_tx": 5410,
+  "hasMore": true,
+  "txs": [true]
+    {"0x646174613a2c7b2020202261646472657373223a2022333478703476526f43474a796d337852377943565046486f434e787634547773656f222c20202022746f74616c5f7265636569766564223a203130393338393833363734343732362c20202022746f74616c5f73656e74223a2038343533303038333039313132342c2020202262616c616e6365223a2032343835393735333635333630322c20202022756e636f6e6669726d65645f62616c616e6365223a20302c2020202266696e616c5f62616c616e6365223a2032343835393735333635333630322c202020226e5f7478223a20353431302c20202022756e636f6e6669726d65645f6e5f7478223a20302c2020202266696e616c5f6e5f7478223a20353431302c202020226861734d6f7265223a20747275652c20202022747873223a205b747275655d20202020207b
+      "block_hash": "000000000000000000022f900f42f807f7b40ece51d58ab82fae1c455686b77f", command](#running-cirrus-tasks):
 
 ```bash
 cirrus run --environment CIRRUS_HTTP_CACHE_HOST=http-cache-host.internal:8080
